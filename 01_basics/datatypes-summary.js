@@ -11,22 +11,45 @@
 // const outsideTemp = null
 // let userEmail;
 
-const id = Symbol('123');
-const anotherId = Symbol('123');
-console.log(id === anotherId);
+// const id = Symbol('123');
+// const anotherId = Symbol('123');
+// console.log(id === anotherId);
 
 //const bigNumber = 34565435766543656743n
 
 //Array, Objects, Functions
 
-const heros = ["shaktiman", "nagraj", "doga"];
-let myObj = {
-    name: "hitesh",
-    age: 22,
+// const heros = ["shaktiman", "nagraj", "doga"];
+// let myObj = {
+//     name: "hitesh",
+//     age: 22,
+// }
+// const myFunction = function(){
+//     console.log("Hello World");
+// }
+// console.log(typeof bigint)
+// console.log(typeof myFunction)
+// console.log(typeof heros);
+
+//*************************Memory Management*********************************************** */
+
+//Stack (primitive), Heap(non-primitive)
+
+// let myYoutubename = "hiteshchoudharydotcom"
+// let anothername = myYoutubename
+// anothername = "chaiaurcode"
+// myYoutubename = anothername
+// console.log(myYoutubename);
+// console.log(anothername);
+
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
 }
-const myFunction = function(){
-    console.log("Hello World");
-}
-console.log(typeof bigint)
-console.log(typeof myFunction)
-console.log(typeof heros);
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
